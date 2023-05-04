@@ -1,0 +1,54 @@
+package com.hcl.gcs.testscripts.visaexpense;
+
+import java.util.Map;
+
+import org.testng.annotations.Test;
+
+import com.hcl.gcs.baseutil.BaseTest;
+import com.hcl.gcs.dataprovider.DataProviderFactory;
+import com.hcl.gcs.dataprovider.DataProviderFileRowFilter;
+import com.hcl.gcs.pagesActionUtil.FlowControl;
+import com.hcl.gcs.pagesActionUtil.PagesActionUtil;
+
+/*
+ * TestcaseId: TYSS_GCS_VE_O_11
+ * Claim Type: Visa Expense
+ * TestScript Name: TYSS_GCS_VE_O_11
+ * Description: Verify the status of visa expenses claim after getting Referback by RM,L3 Head,L1 Head ,ISG_Approver ESA And Reject By Esa 
+ * */
+
+public class TYSS_GCS_VE_O_11 extends BaseTest {
+	@DataProviderFileRowFilter(file = "./data/GCSTestData.xlsx", sql = "Select * from VisaExpenses where  SlNo ='11'")
+	@Test(dataProvider = "data1", dataProviderClass = DataProviderFactory.class, description = "Description: Verify the status of visa expenses claim after getting Referback by RM,L3 Head,L1 Head ,ISG_Approver ESA And Reject By Esa ")
+	public synchronized void TC_TYSS_GCS_VE_O_11(String slNo, String employeeCode, String category, String description,
+			String amount, String reason, String esaEmpcode, String fileFormat, String approvedAmount, String country,
+			String visaType, String visaExpenseType, String iAuraCaseNumber, String checkBoxNames) {
+
+		Map<String, String> mapDataKeyValues = PagesActionUtil.getCategoryMapData(employeeCode, category, description,
+				amount, reason, esaEmpcode, fileFormat, approvedAmount, country, visaType, visaExpenseType,
+				iAuraCaseNumber, checkBoxNames);
+		String[][] arrFlowControl = new String[][] { { "Employee", "InitiateClaim" },
+				{ "RM", "ReferBackClaimThroughClaimNumber" }, { "Employee", "RM_ReferBack_ClaimId" },
+				{ "RM", "ApproveClaimThroughClaimNumber" }, { "Employee", "RM_Approve_Homepage" },
+				{ "L3 Head", "ReferBackClaimThroughClaimNumber" }, { "Employee", "L3Head_ReferBack_ClaimId" },
+				{ "RM", "ApproveClaimThroughClaimNumber" }, { "Employee", "RM_Approve_Homepage" },
+				{ "L3 Head", "ApproveClaimThroughClaimNumber" }, { "Employee", "L3Head_Approve_Homepage" },
+
+				{ "L1 Head", "ReferBackClaimThroughClaimNumber" }, { "Employee", "L1Head_ReferBack_ClaimId" },
+				{ "RM", "ApproveClaimThroughClaimNumber" }, { "Employee", "RM_Approve_Homepage" },
+				{ "L3 Head", "ApproveClaimThroughClaimNumber" }, { "Employee", "L3Head_Approve_Homepage" },
+				{ "L1 Head", "ApproveClaimThroughClaimNumber" }, { "Employee", "L1Head_Approve_Homepage" },
+
+				{ "ISG_App", "ReferBackClaimThroughClaimNumber" }, { "Employee", "ISGApprover_REFERBACK_CLAIMId" },
+				{ "RM", "ApproveClaimThroughClaimNumber" }, { "Employee", "RM_Approve_Homepage" },
+				{ "L3 Head", "ApproveClaimThroughClaimNumber" }, { "Employee", "L3Head_Approve_Homepage" },
+				{ "L1 Head", "ApproveClaimThroughClaimNumber" }, { "Employee", "L1Head_Approve_Homepage" },
+				{ "ISG_App", "ApproveClaimThroughClaimNumber" }, { "Employee", "ISGApprover_Approve_Homepage" },
+				{ "ES Approver", "ReferBackClaim" }, { "Employee", "ESAPPROVER_REFERBACK_CLAIMID" },
+				{ "ES Approver", "RejectClaim" }, { "Employee", "ESAPPROVER_REJECT_HOMEPAGE" } };
+
+		FlowControl.flowPath(arrFlowControl, mapDataKeyValues, driver);
+
+	}
+
+}
