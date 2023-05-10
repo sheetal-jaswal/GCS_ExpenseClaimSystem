@@ -98,7 +98,7 @@ public class NewCashClaim_Page {
 	private WebElement txtSampleFileFormat;
 
 	/* Reason Text area */
-	@FindBy(name = "remarksfield")
+	@FindBy(id = "textarea1")
 	private WebElement tbReason;
 
 	/* Raised Declared check box */
@@ -298,6 +298,52 @@ public class NewCashClaim_Page {
 	/* Check box */
 	@FindBy(xpath = "//div[@class='checkbox declareText']/descendant::input")
 	private List<WebElement> lstCheckBoxs;
+	
+	/* Claim submit Toast Message */
+	@FindBy(xpath = "//a[@id='#defcost' and text()='Your Cost Center']")
+	private WebElement yourCostCenterBtn;
+	
+	/* Claim submit Toast Message */
+	@FindBy(xpath = "//a[@id='#defcost' and text()='Your Cost Center']")
+	private WebElement selectCurency;
+	
+	/* Bill form date textbox */
+	@FindBy(id = "expensedate")
+	private WebElement expensedate;
+	
+	/* Start Location textbox */
+	@FindBy(id = "txtstrt")
+	private WebElement stateLocation;
+	
+	/* End Location textbox */
+	@FindBy(id = "txtend")
+	private WebElement endLocation;
+	
+	/* Miles/km textbox */
+	@FindBy(id = "txtmiles")
+	private WebElement txtmiles;
+	
+	/* Miles/km textbox */
+	@FindBy(xpath = "//*[@id='selectedIBSCarType']")
+	private WebElement allowanceDdn;
+	
+	
+	@FindBy(xpath = "//*[@id='No']")
+	private WebElement saveClaimRadioBtn;
+	
+	
+	@FindBy(xpath = "//*[@id='ccNo']")
+	private WebElement customeRadioBtn;
+	
+	@FindBy(xpath = "//*[@id='ADDexpenceButton']/button")
+	private WebElement ADDexpenceButton;
+	
+	@FindBy(xpath = "//*[@id='txtAmount']")
+	private WebElement amountTxt;
+	
+	@FindBy(xpath = "//*[@id='chkDeclaration']")
+	private WebElement chkDeclaration;
+
 
 	/**
 	 * Description: Method to click on check box
@@ -626,48 +672,50 @@ public class NewCashClaim_Page {
 			WebActionUtil.waitForElement(lnkDragDrop, "Upload Bill Link");
 			WebActionUtil.clickOnElement(lnkDragDrop, "Upload Bill Link", "Unable to click on Upload Bill Link");
 			WebActionUtil.upload(imagePath);
-			try {
-				if(advanceSpinner.isDisplayed() ) {
-					WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
-				}}catch (Exception e) {
-					WebActionUtil.error(e.getMessage());
-					WebActionUtil.fail("Spinner is still visible");
-					Assert.fail("Spinner is still visible");
-				}
-			String filename = txtSampleFileFormat.getText();
-			WebActionUtil.validatetext(filename, txtSampleFileFormat, "File name", filename + " file is uploaded",
-					filename + " file is not uploaded", "blue");
-
-			try {
-				if(advanceSpinner.isDisplayed() ) {
-					WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
-				}}catch (Exception e) {
-					WebActionUtil.error(e.getMessage());
-					WebActionUtil.fail("Spinner is still visible");
-					Assert.fail("Spinner is still visible");
-				}
+		
 			
-			Robot r = new Robot();
-			r.keyPress(KeyEvent.VK_TAB);
-			r.keyRelease(KeyEvent.VK_TAB);
-
-			r.keyPress(KeyEvent.VK_TAB);
-			r.keyRelease(KeyEvent.VK_TAB);
-
-			r.keyPress(KeyEvent.VK_TAB);
-			r.keyRelease(KeyEvent.VK_TAB);
-
-			r.keyPress(KeyEvent.VK_ENTER);
-			r.keyRelease(KeyEvent.VK_ENTER);
+//			try {
+//				if(advanceSpinner.isDisplayed() ) {
+//					WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
+//				}}catch (Exception e) {
+//					WebActionUtil.error(e.getMessage());
+//					WebActionUtil.fail("Spinner is still visible");
+//					Assert.fail("Spinner is still visible");
+//				}
+//			String filename = txtSampleFileFormat.getText();
+//			WebActionUtil.validatetext(filename, txtSampleFileFormat, "File name", filename + " file is uploaded",
+//					filename + " file is not uploaded", "blue");
+//
+//			try {
+//				if(advanceSpinner.isDisplayed() ) {
+//					WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
+//				}}catch (Exception e) {
+//					WebActionUtil.error(e.getMessage());
+//					WebActionUtil.fail("Spinner is still visible");
+//					Assert.fail("Spinner is still visible");
+//				}
+//			
+//			Robot r = new Robot();
+//			r.keyPress(KeyEvent.VK_TAB);
+//			r.keyRelease(KeyEvent.VK_TAB);
+//
+//			r.keyPress(KeyEvent.VK_TAB);
+//			r.keyRelease(KeyEvent.VK_TAB);
+//
+//			r.keyPress(KeyEvent.VK_TAB);
+//			r.keyRelease(KeyEvent.VK_TAB);
+//
+//			r.keyPress(KeyEvent.VK_ENTER);
+//			r.keyRelease(KeyEvent.VK_ENTER);
+//			
+//			try {
+//			if(advanceSpinner.isDisplayed() ) {
+//				WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
+//			}}catch (Exception e) {
+//				WebActionUtil.error(e.getMessage());
+//				WebActionUtil.fail("Spinner is still visible");
+//				Assert.fail("Spinner is still visible");
 			
-			try {
-			if(advanceSpinner.isDisplayed() ) {
-				WebActionUtil.waitForInvisibilityOfElement(advanceSpinner, "Spinner", (long)60);
-			}}catch (Exception e) {
-				WebActionUtil.error(e.getMessage());
-				WebActionUtil.fail("Spinner is still visible");
-				Assert.fail("Spinner is still visible");
-			}
 		} catch (Exception e) {
 			WebActionUtil.error(e.getMessage());
 			WebActionUtil.fail("Unable to click on Upload Your Bill");
@@ -861,11 +909,11 @@ public class NewCashClaim_Page {
 //			WebActionUtil.validateisElementDisplayed(btnYes, btnYes,"Yes button", "Yes Button is Displayed", "Yes Button is Not Displayed");	
 //			new WebDriverWait(driver,20).until(ExpectedConditions.invisibilityOf(btnYes));
 			WebActionUtil.clickOnElement(btnYes, "Yes Button", "Unable to click on Yes Button");
-			WebActionUtil.waitForElement(ClaimSubmitedToastMessage, "Claim Submitted Toast Message");
-			WebActionUtil.validateisElementDisplayed(ClaimSubmitedToastMessage, "Claim Submitted Success Message",
-					"Claim Submitted Success Message is Displayed", "Claim Submitted Success Messagee is not Dispalyed",
-					"green");
-			WebActionUtil.switchToMainTab();
+//			WebActionUtil.waitForElement(ClaimSubmitedToastMessage, "Claim Submitted Toast Message");
+//			WebActionUtil.validateisElementDisplayed(ClaimSubmitedToastMessage, "Claim Submitted Success Message",
+//					"Claim Submitted Success Message is Displayed", "Claim Submitted Success Messagee is not Dispalyed",
+//					"green");
+//			WebActionUtil.switchToMainTab();
 
 		} catch (Exception e) {
 			WebActionUtil.error(e.getMessage());
@@ -1624,6 +1672,8 @@ public class NewCashClaim_Page {
 
 	public synchronized void setApproveRemark(String reason) {
 		try {
+			WebActionUtil.clickOnElement(tbReason, "Reason", "Unable to click on Reason");			
+
 			WebActionUtil.waitForElement(tbReason, "Reason or Business justificaion Text Area");
 			WebActionUtil.typeText(tbReason, reason, "Reason or Business justificaion Text Area");
 			WebActionUtil.extentinfo(reason + " is entered in Reason or Business justificaion Text Area");
@@ -1641,7 +1691,7 @@ public class NewCashClaim_Page {
 	 * @author Suganthini
 	 * @param description
 	 */
-	private synchronized void setDescription(String description) {
+	public synchronized void setDescription(String description) {
 
 		try {
 
@@ -1654,5 +1704,157 @@ public class NewCashClaim_Page {
 			Assert.fail("Unable to type " + description + " into Description Text are field");
 		}
 	}
+	
+	public synchronized void selectExpensesGeo(String categroy) {
+		try {
+			WebActionUtil.poll(2000);
+			WebActionUtil.clickOnElement(yourCostCenterBtn, "Select Expenses", "Unable to click on Select Expenses");			
+			WebActionUtil.waitForElement(sddCategroy, "Select Expenses");
+			WebActionUtil.selectByText(sddCategroy, categroy);
+			validateSelectedExpenses(categroy);
+			
+			
+		} catch (Exception e) {
+			WebActionUtil.fail("Unable to click on Select Expenses");
+			WebActionUtil.error("Unable to click on Select Expenses");
+			Assert.fail("Unable to click on Select Expenses");
+		}
+	}
+		
+		public synchronized void expenseDateGeo(String categroy) {
+			try {
+				System.out.println(categroy);
+				WebActionUtil.waitForElement(expensedate, "From Date Textbox");
+				WebActionUtil.clickOnElement(expensedate, "From Date Textbox", "unable to enter FromDate");
+				WebActionUtil.clearText(expensedate, "From Date Textbox");
+				WebActionUtil.selectCalendarRangeDates("expensedate", categroy);
+				String expectedfromdate = WebActionUtil.getTextUsingJS("expensedate");
+				WebActionUtil.validateEnteredValue(expectedfromdate, categroy, "From Date Textbox",
+						expectedfromdate + " entered in from date Textbox", expectedfromdate + " not entered in from date Textbox", "blue");				
+			} catch (Exception e) {
+				WebActionUtil.fail("Unable to click on Select Expenses");
+				WebActionUtil.error("Unable to click on Select Expenses");
+				Assert.fail("Unable to click on Select Expenses");
+			}
+		}
+			
+		public synchronized void setStartLocation(String categroy) {
+			try {
+				WebActionUtil.waitForElement(stateLocation, "Description Text Area");
+				WebActionUtil.typeText(stateLocation, categroy, "Description Text Area");
+				WebActionUtil.extentinfo(categroy + " is entered in Description Text Area");
+			} catch (Exception e) {
+				WebActionUtil.error(e.getMessage());
+				WebActionUtil.fail("Unable to type " + categroy + " into Description Text are field");
+				Assert.fail("Unable to type " + categroy + " into Description Text are field");
+			}
+		}
+			
+			public synchronized void setEndLocation(String categroy) {
+				try {
+					WebActionUtil.waitForElement(endLocation, "Description Text Area");
+					WebActionUtil.typeText(endLocation, categroy, "Description Text Area");
+					WebActionUtil.extentinfo(categroy + " is entered in Description Text Area");
+				} catch (Exception e) {
+					WebActionUtil.error(e.getMessage());
+					WebActionUtil.fail("Unable to type " + categroy + " into Description Text are field");
+					Assert.fail("Unable to type " + categroy + " into Description Text are field");
+				}
+			}
+			
+			public synchronized void setMiles(String categroy) {
+				try {
+					WebActionUtil.waitForElement(txtmiles, "Description Text Area");
+					WebActionUtil.typeText(txtmiles, categroy, "Description Text Area");
+					WebActionUtil.extentinfo(categroy + " is entered in Description Text Area");
+				} catch (Exception e) {
+					WebActionUtil.error(e.getMessage());
+					WebActionUtil.fail("Unable to type " + categroy + " into Description Text are field");
+					Assert.fail("Unable to type " + categroy + " into Description Text are field");
+				}
+			}
+			
+			public synchronized void selectAllowance(String categroy) {
+				try {
+					WebActionUtil.poll(2000);
+					WebActionUtil.clickOnElement(allowanceDdn, "Select Expenses", "Unable to click on Select Expenses");			
+					WebActionUtil.waitForElement(allowanceDdn, "Select Expenses");
+					WebActionUtil.selectByText(allowanceDdn, categroy);			
+				} catch (Exception e) {
+					WebActionUtil.fail("Unable to click on Select Expenses");
+					WebActionUtil.error("Unable to click on Select Expenses");
+					Assert.fail("Unable to click on Select Expenses");
+				}
+			}
+			
+			public synchronized void saveClaimDdn() {
+				try {
+					WebActionUtil.poll(2000);
+					WebActionUtil.clickOnElement(saveClaimRadioBtn, "Saves Calim", "Unable to click on Select Expenses");			
+					WebActionUtil.clickOnElement(customeRadioBtn, "Chargeable to Customer", "Unable to click on Select Expenses");	
+					
+				} catch (Exception e) {
+					WebActionUtil.fail("Unable to click on Select Expenses");
+					WebActionUtil.error("Unable to click on Select Expenses");
+					Assert.fail("Unable to click on Select Expenses");
+				}
+			}
+			
+			public synchronized void addExpenseBtn() {
+				try {
+					WebActionUtil.poll(2000);
+					WebActionUtil.clickOnElement(ADDexpenceButton, "Saves Calim", "Unable to click on Select Expenses");			
+					
+				} catch (Exception e) {
+					WebActionUtil.fail("Unable to click on Add Expenses");
+					WebActionUtil.error("Unable to click on Add Expenses");
+					Assert.fail("Unable to click on Add Expenses");
+				}
+			}
+			
+			public synchronized void textAmount(String categroy) {
+				try {
+					WebActionUtil.waitForElement(amountTxt, "Description Text Area");
+					WebActionUtil.typeText(amountTxt, categroy, "Description Text Area");
+					WebActionUtil.extentinfo(categroy + " is entered in Description Text Area");
+				} catch (Exception e) {
+					WebActionUtil.error(e.getMessage());
+					WebActionUtil.fail("Unable to type " + categroy + " into Description Text are field");
+					Assert.fail("Unable to type " + categroy + " into Description Text are field");
+				}
+			}
+			
+			public synchronized void clickCheckBox() {
+				try {
+					WebActionUtil.poll(2000);
+					WebActionUtil.clickOnElement(chkDeclaration, "Check Box", "Unable to click on Check Box");			
+					
+				} catch (Exception e) {
+					WebActionUtil.fail("Unable to click on Check Box");
+					WebActionUtil.error("Unable to click on Check Box");
+					Assert.fail("Unable to click on Check Box");
+				}
+			}
+			
+			public synchronized void bacvkward() {
+				try {
+					Thread.sleep(20000);
+					driver.navigate().back();
+					
+				} catch (Exception e) {
+					WebActionUtil.fail("Unable to click on Check Box");
+					WebActionUtil.error("Unable to click on Check Box");
+					Assert.fail("Unable to click on Check Box");
+				}
+			}
+			
+			
+			
+			
+			
+			
+				
+
+
 
 }

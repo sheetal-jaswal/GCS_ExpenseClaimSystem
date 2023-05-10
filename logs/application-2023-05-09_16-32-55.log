@@ -1,0 +1,80 @@
+16:32:55.532 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+16:32:55.617 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+16:32:55.631 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_09_2023_16_32_55
+16:32:55.729 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+16:32:55.734 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+16:33:03.417 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - chrome Browser is launched
+16:33:27.916 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+16:33:28.180 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 40178582 typed into Employee code Textbox
+16:33:31.211 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+16:33:31.212 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+16:33:31.213 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+16:33:31.394 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin typed into Password Textbox
+16:33:32.413 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Password Textbox
+16:33:32.413 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin is entered into Password TextBox
+16:33:32.414 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Login Button is clickable
+16:33:32.607 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Login Button
+16:33:32.608 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+16:33:32.770 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 typed into Employee code Textbox
+16:33:37.804 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+16:33:37.806 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+16:33:37.807 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+16:33:37.990 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - aa typed into Password Textbox
+16:33:39.012 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Password Textbox
+16:33:39.013 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin is entered into Password TextBox
+16:33:39.014 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Login Button is clickable
+16:34:12.829 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Login Button
+16:34:12.829 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Visiblity of Global Claim System Logo
+16:34:13.058 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Able to mouse over on Hover on New Claim
+16:34:15.060 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Global Claims Button
+16:34:15.199 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Global Claims Button is clickable
+16:34:39.037 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Global Claims Button
+16:34:43.060 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Global Claims Button is clickable
+16:34:43.204 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Global Claims Button
+16:34:49.237 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Select Expenses is clickable
+16:34:49.427 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Select Expenses
+16:34:49.428 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Select Expenses
+16:34:49.508 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Select the value Mileage/Km Allowance
+16:34:49.691 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Able to select the value : Mileage/Km Allowance
+16:34:49.930 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for From Date Textbox
+16:34:50.033 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate From Date Textbox is clickable
+16:34:50.199 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : From Date Textbox
+16:34:50.327 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clear the text present inFrom Date Textbox
+16:34:50.336 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 1 Jan'23 is selected
+16:34:51.366 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in From Date Textbox
+16:34:51.367 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 1 Jan'23 entered in from date Textbox
+16:34:51.368 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Description Text Area
+16:34:51.473 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Description Text Area
+16:34:51.623 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Toronto typed into Description Text Area
+16:34:51.624 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Description Text Area
+16:34:51.730 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Description Text Area
+16:34:51.920 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Gulph typed into Description Text Area
+16:34:51.921 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Description Text Area
+16:34:52.047 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Description Text Area
+16:34:52.187 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 5 typed into Description Text Area
+16:34:54.200 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Select Expenses is clickable
+16:34:54.360 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Select Expenses
+16:34:54.360 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Select Expenses
+16:34:54.438 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Select the value 5 C.V
+16:34:54.589 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Able to select the value : 5 C.V
+16:34:54.589 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Description Text Area
+16:34:54.675 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Description Text Area
+16:34:54.810 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - TEST RUN typed into Description Text Area
+16:34:56.825 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Saves Calim is clickable
+16:34:56.977 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Saves Calim
+16:34:56.979 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Chargeable to Customer is clickable
+16:34:57.096 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Chargeable to Customer
+16:34:59.103 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Saves Calim is clickable
+16:34:59.281 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Saves Calim
+16:35:31.439 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for invisiblity of Spinner
+16:35:31.477 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Add Expenses Button
+16:35:31.619 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Add Expenses Button is clickable
+16:35:31.810 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Add Expenses Button
+16:35:31.811 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for invisiblity of Spinner
+16:35:31.841 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Upload Bill Link
+16:35:31.955 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Upload Bill Link is clickable
+16:35:32.081 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Upload Bill Link
+16:35:39.331 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Reason or Business justificaion Text Area
+16:35:59.404 [main] ERROR com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Reason or Business justificaion Text Area is not visible
+16:35:59.405 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Reason or Business justificaion Text Area
+16:36:19.543 [main] ERROR com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance -  Unable to type Automating the appinto Reason or Business justificaion Text Area

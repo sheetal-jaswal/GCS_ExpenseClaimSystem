@@ -1,0 +1,36 @@
+10:04:51.413 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+10:04:51.559 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+10:04:51.586 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_05_2023_10_04_51
+10:04:51.757 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+10:04:51.767 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+10:04:56.759 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - chrome Browser is launched
+10:05:21.177 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+10:05:21.552 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 40178582 typed into Employee code Textbox
+10:05:24.591 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+10:05:24.592 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+10:05:24.593 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+10:05:24.889 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin typed into Password Textbox
+10:05:25.913 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Password Textbox
+10:05:25.914 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin is entered into Password TextBox
+10:05:25.914 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Login Button is clickable
+10:05:26.376 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Login Button
+10:05:26.378 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+10:05:26.697 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 typed into Employee code Textbox
+10:05:31.740 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+10:05:31.741 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+10:05:31.741 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+10:05:32.025 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - aa typed into Password Textbox
+10:05:33.056 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Password Textbox
+10:05:33.057 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin is entered into Password TextBox
+10:05:33.058 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Login Button is clickable
+10:05:39.090 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Login Button
+10:05:39.091 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Visiblity of Global Claim System Logo
+10:05:39.370 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Able to mouse over on Hover on New Claim
+10:05:41.386 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Global Claims Button
+10:05:41.588 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Global Claims Button is clickable
+10:06:05.743 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Global Claims Button
+10:06:09.764 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Global Claims Button is clickable
+10:06:10.008 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Global Claims Button
+10:06:16.058 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Wait for Select Expenses
+10:06:16.199 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Select the value Broadband Expenses
+10:06:36.478 [main] ERROR com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance -  Unable to select the value : Broadband Expenses

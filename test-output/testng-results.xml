@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-10T04:09:05Z" name="Global Claim System" finished-at="2023-05-10T04:20:34Z" duration-ms="689639">
+    <groups>
+    </groups>
+    <test started-at="2023-05-10T04:09:05Z" name="PROJECT_Test1" finished-at="2023-05-10T04:20:34Z" duration-ms="689639">
+      <class name="com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance">
+        <test-method is-config="true" signature="createFiles()[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:09:05Z" name="createFiles" finished-at="2023-05-10T04:09:05Z" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFiles -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:09:05Z" name="launchApp" finished-at="2023-05-10T04:09:08Z" duration-ms="3250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="setExtentReport(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:09:09Z" name="setExtentReport" finished-at="2023-05-10T04:09:09Z" duration-ms="604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public synchronized void com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance.TC_TYSS_GCS_BB_01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method signature="TC_TYSS_GCS_BB_01(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:09:09Z" name="TC_TYSS_GCS_BB_01" description="Description:To Verify Broadband claim submit by the employee and Approve by ES and check the status of employee" data-provider="data1" finished-at="2023-05-10T04:20:34Z" duration-ms="684419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[52083401]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mileage/Km Allowance]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1 Jan'23]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Gulph]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Toronto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[5 C.V]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[TEST RUN]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Automating the app]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[51334799]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[png]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Declaration1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_TYSS_GCS_BB_01 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:20:34Z" name="closeBrowser" finished-at="2023-05-10T04:20:34Z" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="killTask(java.lang.String)[pri:0, instance:com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance@44be0077]" started-at="2023-05-10T04:20:35Z" name="killTask" finished-at="2023-05-10T04:20:35Z" duration-ms="43" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killTask -->
+      </class> <!-- com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance -->
+    </test> <!-- PROJECT_Test1 -->
+  </suite> <!-- Global Claim System -->
+</testng-results>

@@ -27,17 +27,17 @@ public class PagesActionUtil extends BaseTest {
 	public synchronized static Map<String, Category> getCategoryValues() {
 		String[] strCategories = new String[] { "Books & Periodicals", " Online External Trainings",
 				"Books & Periodicals(Enable only for GWS)", "Broadband Expenses", "Business Entertainment",
-				"Business Gift", "Cab Breakdown Exp", "Catalyst Advance", "Catalyst Expenses", "CEO’s Champion Club",
+				"Business Gift", "Cab Breakdown Exp", "Catalyst Advance", "Catalyst Expenses", "CEOï¿½s Champion Club",
 				"Cell Phone", "Conveyance", "Courier Charges", "COVID 19 Evacuation Advance", "Covid Test (RTPCR)",
-				"COVID-19", "EFC – Grey Cells Council", "EFC – Sports Council", "EFC- Ambassador Council",
+				"COVID-19", "EFC ï¿½ Grey Cells Council", "EFC ï¿½ Sports Council", "EFC- Ambassador Council",
 				"EFC- Community Services Council", "EFC- Talent Council", "EFC- Wellness Council",
 				"EFC- Women First Council", "HE Advance Other", "HRA Advance", "Laptop/Asset Purchase",
 				"Legal Expenses", "Miscellaneous expenses", "Other advance", "Other(Expense Related) advance",
-				"PG Accomodation – Return to Office", "Post & Telegram", "Printing & Stationery/Off.Supplies",
-				"Relocation Expense – Accommodation Charges", "Relocation Expenses", "Rep. & Maint(Bldg.)",
+				"PG Accomodation ï¿½ Return to Office", "Post & Telegram", "Printing & Stationery/Off.Supplies",
+				"Relocation Expense ï¿½ Accommodation Charges", "Relocation Expenses", "Rep. & Maint(Bldg.)",
 				"Repair Maint. (others)", "Salary/Medical Advance", "Specialized Training Expense", "Staff Recruitment",
 				"Staff Welfare", "Technical\\Domain\\Process Certification Expense", "Transfer Claim", "Visa Expenses",
-				"Visa Expenses Old", "Zero Expense" };
+				"Visa Expenses Old", "Zero Expense","Mileage/Km Allowance" };
 		Category[] enumCategories = new Category[] { Category.BOOKS_PERIODICALS, Category.ONLINE_EXTERNAL_TRAININGS,
 				Category.BOOK_PERIODICALS_GWS, Category.BROADBAND_EXPENSES, Category.BUISNESS_ENTERTAINEMENT,
 				Category.BUISNESS_GIFT, Category.CAB_BREAKDOWN_EXP, Category.CATALYST_ADVANCE,
@@ -53,7 +53,7 @@ public class PagesActionUtil extends BaseTest {
 				Category.RELOCATION_EXPENSES, Category.REP_AND_MAINT_BLDG, Category.REPAIR_MAINT_OTHERS,
 				Category.SALARY_MEDICAL_ADVANCE, Category.SPECIALIZED_TRAINING_EXPENSE, Category.STAFF_RECRUITMENT,
 				Category.STAFF_WELFARE, Category.TECHNICAL_CERTIFICATION, Category.TRANSFER_CLAIM,
-				Category.VISA_EXPENSES, Category.VISA_EXPENSES_OLD, Category.ZERO_EXPENSES };
+				Category.VISA_EXPENSES, Category.VISA_EXPENSES_OLD, Category.ZERO_EXPENSES, Category.MILEAGE};
 
 		Map<String, Category> mapCatValues = IntStream.range(0, strCategories.length).boxed()
 				.collect(Collectors.toMap(i -> strCategories[i], i -> enumCategories[i]));
@@ -148,13 +148,13 @@ public class PagesActionUtil extends BaseTest {
 			return roles;
 		} else {
 			/* Login to application as Employee */
-			pages.loginpage.loginToApplication(empCode, password);
+			pages.loginpage.loginToApplication_Geo(empCode, password);
 
 			/* Click on More claim tab */
-			pages.homePage.clkMoreClaimsTab(prop_constants.getProperty("expectedNewCashClaimUrl"));
+			pages.homePage.clkOnNewClaimTab();
 
 			/* Select expense type */
-			pages.newCashClaimPage.selectExpenses(mapDataKeyValues.get("category"));
+			pages.newCashClaimPage.selectExpensesGeo(mapDataKeyValues.get("category"));
 
 			String[] data = getDataToFillCategoryDetails(getCategoryValues().get(mapDataKeyValues.get("category")),
 					mapDataKeyValues);
@@ -1433,9 +1433,146 @@ public class PagesActionUtil extends BaseTest {
 					.collect(Collectors.toMap(i -> keys[i], i -> values[i]));
 			break;
 		}
+		
+		case MILEAGE: {
+			String[] keys = new String[] { "employeeCode", "category","typesOfAllowance","miles", "description", "amount", "mobileNumber",
+					"fromDate","endLocation", "startLocation", "reason", "esaEmpcode", "fileFormat", "approvedAmount", "checkBoxNames" };
+			mapDataKeyValues = IntStream.range(0, keys.length).boxed()
+					.collect(Collectors.toMap(i -> keys[i], i -> values[i]));
+			break;
+		}
 
 		}
 
 		return mapDataKeyValues;
+	}
+	
+	public synchronized static Map<String, String> initiateClaim_Geo(String empCode, String password,
+			Map<String, String> mapDataKeyValues) throws InterruptedException {
+
+		String[] checkBoxNames = mapDataKeyValues.get("checkBoxNames").split(",");
+		if (mapDataKeyValues.get("category").equalsIgnoreCase("Zero Expense")) {
+			/* Login to application as Employee */
+			pages.loginpage.loginToApplication(empCode, password);
+
+			/* Click on Advance Settlement tab */
+			pages.homePage.clkRaiseNewClaimTab("Advance Settlement");
+
+			/* Click on Advance Settlement radio button */
+			pages.newCashClaimPage.clkAdvanceClaim();
+
+			/* Select expense type */
+			pages.newCashClaimPage.selectExpenses(mapDataKeyValues.get("category"));
+
+			/* Fetches the data to be filled for the particular category from Excel sheet */
+			String[] data = getDataToFillCategoryDetails(getCategoryValues().get(mapDataKeyValues.get("category")),
+					mapDataKeyValues);
+
+			/* Fill category fields */
+			pages.newCashClaimPage.fillCategoryDetails(getCategoryValues().get(mapDataKeyValues.get("category")), data);
+
+			/* Click on add expense */
+			pages.newCashClaimPage.clkAddExpense();
+
+			/* Enter reason */
+			pages.newCashClaimPage.setApproveRemark(mapDataKeyValues.get("reason"));
+
+			/* Closes the Feedback System Popup */
+			closeFeedbackWindow();
+
+			/* Check declaration check box */
+			pages.newCashClaimPage.clkCheckBoxs(checkBoxNames);
+			
+			/* Click on submit */
+			pages.newCashClaimPage.clkSubmitButton();
+
+			/* Click on yes button */
+			pages.newCashClaimPage.clkOnYesButton();
+
+			WebActionUtil.poll(2000);
+
+			/* Refresh the current Page */
+			WebActionUtil.driver.navigate().refresh();
+
+			WebActionUtil.waitForAngularPageToLoad();
+
+			/* Closes the Feedback System Popup */
+			closeFeedbackWindow();
+
+			/* Fetch claim number */
+			
+				claimNumber = pages.homePage.getClaimNumber(mapDataKeyValues.get("category"),
+					mapDataKeyValues.get("amount"));
+			/* Click on claim number */
+			pages.homePage.clkClaimNumberMyClaim(claimNumber);
+
+			/* Closes the Feedback System Popup */
+			closeFeedbackWindow();
+
+			/* Retrieves the flow from View cash claim page */
+			Map<String, String> roles = pages.viewCashClaimPage.getRolesFromFlow();
+
+			/* Closes the Feedback System Popup */
+			closeFeedbackWindow();
+
+			/* Logout as employee */
+			pages.logoutPage.selectProfiledd(prop_constants.getProperty("expectedLogoutUrl"));
+
+			return roles;
+		} else {
+			/* Login to application as Employee */
+			pages.loginpage.loginToApplication_Geo(empCode, password);
+
+			/* Click on More claim tab */
+			pages.homePage.clkOnNewClaimTab();
+
+			/* Select expense type */
+			pages.newCashClaimPage.selectExpensesGeo(mapDataKeyValues.get("category"));
+			
+			pages.newCashClaimPage.expenseDateGeo(mapDataKeyValues.get("fromDate"));
+			
+			pages.newCashClaimPage.setStartLocation(mapDataKeyValues.get("startLocation"));
+			
+			pages.newCashClaimPage.setEndLocation(mapDataKeyValues.get("endLocation"));
+			
+			pages.newCashClaimPage.setMiles(mapDataKeyValues.get("miles"));
+			
+			pages.newCashClaimPage.selectAllowance(mapDataKeyValues.get("typesOfAllowance"));
+			
+			pages.newCashClaimPage.setDescription(mapDataKeyValues.get("description"));
+			
+			pages.newCashClaimPage.saveClaimDdn();
+			
+			pages.newCashClaimPage.addExpenseBtn();
+			Thread.sleep(10000);
+			
+
+			Thread.sleep(10000);
+
+			/* Click on add expense and upload bill */
+//			System.out.println("");
+			pages.newCashClaimPage
+					.clkAddExpenseAndUploadBill(WebActionUtil.getSampleFilePath(mapDataKeyValues.get("fileFormat")));
+			System.out.println("");
+
+//			/* Enter reason */
+			pages.newCashClaimPage.setApproveRemark(mapDataKeyValues.get("reason"));
+//
+//			/* Check declaration check box */
+			pages.newCashClaimPage.clickCheckBox();
+//
+//			/* Click on submit */
+			pages.newCashClaimPage.clkSubmitButton();
+//
+//			/* Click on yes button */
+			pages.newCashClaimPage.clkOnYesButton();
+             System.out.println("");
+			WebActionUtil.poll(1000);
+
+			Map<String, String> roles = pages.viewCashClaimPage.getRolesFromFlow();
+
+			return roles;
+		}
+
 	}
 }

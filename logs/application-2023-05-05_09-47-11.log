@@ -1,0 +1,22 @@
+09:47:11.995 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+09:47:12.116 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+09:47:12.135 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_05_2023_09_47_12
+09:47:12.259 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+09:47:12.267 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+09:47:16.706 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - chrome Browser is launched
+09:47:57.466 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+09:47:57.782 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 40178582 typed into Employee code Textbox
+09:48:00.827 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+09:48:00.828 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+09:48:00.828 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+09:48:01.078 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin typed into Password Textbox
+09:48:02.100 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Password Textbox
+09:48:02.102 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - ecsadmin is entered into Password TextBox
+09:48:02.102 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Validate Login Button is clickable
+09:48:02.409 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Clicked on : Login Button
+09:48:02.409 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+09:48:02.693 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 typed into Employee code Textbox
+09:48:07.731 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Valid value is entered in Empcode Textbox
+09:48:07.732 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 is entered into Empcode TextBox
+09:48:07.732 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Password Textbox
+09:48:07.965 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - aa typed into Password Textbox

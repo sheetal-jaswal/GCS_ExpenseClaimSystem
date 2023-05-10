@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Failed suite [Global Claim System]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.hcl.gcs.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="PROJECT_Test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance">
+        <methods>
+          <include name="createFiles"/>
+          <include name="TC_TYSS_GCS_BB_01"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="killTask"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance -->
+    </classes>
+  </test> <!-- PROJECT_Test1(failed) -->
+</suite> <!-- Failed suite [Global Claim System] -->

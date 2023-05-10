@@ -1,0 +1,6 @@
+13:23:30.724 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+13:23:30.836 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+13:23:30.851 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_04_2023_13_23_30
+13:23:30.959 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+13:23:30.964 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+13:23:34.890 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - chrome Browser is launched

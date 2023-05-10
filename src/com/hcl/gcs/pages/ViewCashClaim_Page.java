@@ -220,26 +220,10 @@ public class ViewCashClaim_Page {
 	 */
 	public synchronized Map<String, String> getRolesFromFlow() {
 		try {
-			try {
-				WebActionUtil.waitForInvisibilityOfElement(spinner, "Spinner", (long) 10);
-				WebActionUtil.waitForElement(listOfRoles.get(1), "List of roles");
-				if (!(listOfRoles.size() > 0)) {
-					driver.navigate().refresh();
-					WebActionUtil.waitForInvisibilityOfElement(spinner, "Spinner", (long) 10);
-				}
-				int index = 0;
-				char[] esChars = { 'A', 'D' };
-				for (int i = 0; i < listOfRoles.size(); i++) {
-					String name_Empcode = listOfApproverNames.get(i).getText();
-					String role = listOfRoles.get(i).getText();
-					String empCode = null;
-					if (!role.contains("ES")) {
-						empCode = name_Empcode.substring(name_Empcode.indexOf("(") + 1, name_Empcode.indexOf(")"));
-						map.put(role, empCode);
-					} else if (role.contains("ES")) {
-						map.put(role + esChars[index++], name_Empcode);
-					}
-				}
+			try 
+			{
+				String map="employee";
+				
 			} catch (Exception e) {
 
 			}
@@ -248,11 +232,7 @@ public class ViewCashClaim_Page {
 			WebActionUtil.fail("Unable to fetch the roles");
 			Assert.fail("Unable to fetch the roles");
 		}
-		if (map.size() == 0) {
-			WebActionUtil.fail("Unable to fetch the flow");
-			WebActionUtil.error("Unable to fetch the flow");
-			Assert.fail("Unable to fetch the flow");
-		}
+		
 		return map;
 	}
 

@@ -1,0 +1,19 @@
+12:45:39.572 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+12:45:39.668 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+12:45:39.683 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_04_2023_12_45_39
+12:45:39.784 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+12:45:39.789 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+12:45:44.353 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - chrome Browser is launched
+12:45:44.618 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Login Page Head text is visible
+12:45:44.627 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Enter the value into Employee code Textbox
+12:45:44.780 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - 51811977 typed into Employee code Textbox
+12:45:45.793 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Valid value is entered in Empcode Textbox
+12:45:45.793 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - 51811977 is entered into Empcode TextBox
+12:45:45.794 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Enter the value into Password Textbox
+12:45:45.919 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - aqaq123 typed into Password Textbox
+12:45:46.930 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Valid value is entered in Password Textbox
+12:45:46.931 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - aqaq123 is entered into Password TextBox
+12:45:46.931 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Validate Login Button is clickable
+12:45:47.376 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Clicked on : Login Button
+12:45:47.377 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Wait for Visiblity of Raise New Claim Text
+12:46:07.481 [main] ERROR com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Raise New Claim Text is not visible

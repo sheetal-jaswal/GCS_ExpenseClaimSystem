@@ -208,6 +208,19 @@ public class Home_Page {
 	/* Cost center text */
 	@FindBy(xpath = "//div[@class='form-group group']/p[@class='ng-binding']")
 	private WebElement txtforCabBreakDown;
+	
+	/*New Claim Button */
+	@FindBy(xpath = "//*[@id='ctl00_trmenu']/ul/li/a/span[text()='New Claim']")
+	private WebElement newClaimButton;
+	
+	/*New Claim Button */
+	@FindBy(xpath = "//a[text()='New Global Claim']")
+	private WebElement newGlobalClaimButton;
+	
+	/*New Claim Button */
+	@FindBy(xpath = "(//button[text()='OK'])[1]")
+	private WebElement okButton;
+	
 	/**
 	 * Description Method to click on My Approvals Tab
 	 * 
@@ -906,6 +919,36 @@ public class Home_Page {
 			Assert.fail("Unable to fetch Claim number");
 		}
 		return driver.findElement(By.xpath(path)).getText();
+	}
+	
+	public synchronized void clkOnNewClaimTab() {
+		try {
+			WebActionUtil.actionMouseOver(newClaimButton, "Hover on New Claim");
+			Thread.sleep(2000);
+			WebActionUtil.waitForElement(newGlobalClaimButton, "Global Claims Button");
+			WebActionUtil.clickOnElement(newGlobalClaimButton, "Global Claims Button", "Unable to click on Global Claims Button");
+			Thread.sleep(2000);
+			Thread.sleep(2000);
+			WebActionUtil.clickOnElement(okButton, "Global Claims Button", "Unable to click on Global Claims Button");
+			Thread.sleep(2000);
+			Thread.sleep(2000);
+//			WebActionUtil.waitForAngularPageToLoad();
+//			WebActionUtil.waitForElement(tabMoreClaims, "More Claims Tab");
+//			WebActionUtil.clickOnElement(tabMoreClaims, "More Claims Tab", "Unable to click on More Claims Tab");
+//			WebActionUtil.switchToNewTab();
+			String actualNewCashClaimUrl = driver.getCurrentUrl();
+//			if (actualNewCashClaimUrl.contentEquals(expectedNewCashClaimUrl)) {
+//				WebActionUtil.info("New Claim Page is Displayed., url= " + actualNewCashClaimUrl);
+//				WebActionUtil.validationinfo("New Claim Page is Displayed., url= " + actualNewCashClaimUrl, "blue");
+//			} else {
+//				WebActionUtil.info("Unable to Validate the New Claim Page");
+//			}
+
+		} catch (Exception e) {
+			WebActionUtil.error(e.getMessage());
+			WebActionUtil.fail("Unable to click on More Claims Tab");
+			Assert.fail("Unable to click on More Claims Tab");
+		}
 	}
 
 	

@@ -1,0 +1,5 @@
+13:48:02.820 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+13:48:02.907 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+13:48:02.921 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_08_2023_13_48_02
+13:48:03.022 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+13:48:03.028 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created

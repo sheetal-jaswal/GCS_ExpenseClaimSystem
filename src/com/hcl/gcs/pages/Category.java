@@ -48,7 +48,8 @@ package com.hcl.gcs.pages;
 		CAB_BREAKDOWN_EXP,
 		CELL_PHONE,
 		CONVEYANCE,
-		ZERO_EXPENSES
+		ZERO_EXPENSES,
+		MILEAGE
 		}
 
 

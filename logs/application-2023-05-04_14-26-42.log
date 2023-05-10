@@ -1,0 +1,9 @@
+14:26:42.928 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+14:26:43.137 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+14:26:43.163 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_04_2023_14_26_43
+14:26:43.384 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+14:26:43.397 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+14:26:51.374 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - chrome Browser is launched
+14:27:33.984 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Enter the value into Employee code Textbox
+14:27:34.419 [main] INFO  com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - 52083401 typed into Employee code Textbox
+14:27:37.469 [main] ERROR com.hcl.gcs.testscripts.mileagekmallowance.TYSS_GCS_MileageKmAllowance - Unable to get entered value from element with id txtEmpCode

@@ -1,0 +1,8 @@
+13:13:48.984 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Running locally JavaMail
+13:13:49.074 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Folder creation for Extent
+13:13:49.088 [main] INFO  com.hcl.gcs.baseutil.BaseTest - ExtentDir:-C:\Users\sheetal.jaswal\GCS_ExpenseClaimSystem_new\HCL_GCS_Final_Expense_Claim2/reports/Automation Report- 05_04_2023_13_13_49
+13:13:49.199 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Report Initiated
+13:13:49.203 [main] INFO  com.hcl.gcs.baseutil.BaseTest - Screenshot Folder Created
+13:13:53.120 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - chrome Browser is launched
+13:14:13.363 [main] INFO  com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 - Enter the value into Employee code Textbox
+13:14:33.428 [main] ERROR com.hcl.gcs.testscripts.booksandperiodicals.TYSS_GCS_BP_01 -  Unable to type 51811977into Employee code Textbox
